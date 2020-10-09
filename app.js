@@ -32,7 +32,7 @@ app.use('/logout',validateToken,logout);
 app.use((req, res, next) => {
     res.status(200);
     res.json({
-        message: "hit the wrong url. Available url are /register /login /logout /greet  "
+        message: "hit the wrong url. Available url are... /register /login /logout /greet  "
 
     })
 

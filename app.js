@@ -8,8 +8,9 @@ const login = require('./routes/login');
 const greet = require('./routes/greet');
 const validateToken = require('./middleware/validateToken');
 const logout = require('./routes/logout');
+const cors = require('cors');
 
-
+app.use(cors());
 app.use(morgan('dev'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
